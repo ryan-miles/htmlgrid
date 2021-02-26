@@ -7,13 +7,14 @@
 
 .grid {
     display:grid;
-    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    ".title title."
-    ".header header."
-    ".sidebar content."
-    ".sidebar footer.";
+    "title title"
+    "header header"
+    "sidebar sidebar"
+    "content content"
+    "footer footer";
     grid-gap: 1em;
 }
 
@@ -45,9 +46,17 @@
 }
 
 @media only screen and (min-width: 700px) {
-    .sidebar {
-     background-color: lightblue;
-   }
+    .grid {
+    display:grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ".title title."
+    ".header header."
+    ".sidebar content."
+    ".sidebar footer.";
+    grid-gap: 1em;
+}
 
 }
    
