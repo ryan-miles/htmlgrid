@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<style type="text/css">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
 
 .grid {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 500px 500px 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "title title"
-    "header header"
-    "sidebar content"
-    "sidebar footer";
+    ".title title."
+    ".header header."
+    ".sidebar content."
+    ".sidebar footer.";
+    grid-gap: 1em;
 }
 
 .title {
@@ -26,35 +31,39 @@
 
 .content {
     grid-area: content;
+    justify-self: center;
+    display:grid;
 }
 
 .footer {
     grid-area: footer;
 }
 
-.grid div:nth-child(even) {
-    background-color: orange;
-}
-.grid div:nth-child(odd) {
-    background-color:slategray;
+.grid div {
+    border-style: solid;
+
 }
 
+@media only screen and (min-width: 700px) {
+    .sidebar {
+     background-color: lightblue;
+   }
+
+}
+   
 </style>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
     <body>
         <div class="grid">
             <div class ="title">Title</div>
             <div class ="header">header</div>
             <div class ="sidebar">sidebar</div>
-            <div class ="content">content</div>
+            <div class ="content">
+              <p>A</p>
+              <p>B</p>
+            </div>
             <div class ="footer">footer</div>
-
-
         </div>
         
     </body>
