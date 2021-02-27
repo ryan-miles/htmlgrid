@@ -8,7 +8,7 @@
 .grid {
     display:grid;
     grid-template-columns: 1fr 3.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .8fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "title title title"
     "header header header "
@@ -54,7 +54,13 @@
 
     <body>
         <div class="grid">
-            <div class ="lefttitle">Left Title</div>
+            <div class ="lefttitle">
+                <p style ="text-align: center;"><a href="www.rtx.com">
+                    <img src="jane.jpg" alt="Jane Goodall" width="240" height="300"></a></br>
+                    <a style = "font-weight: bold; font-size: 18; font-family: arial;">Jane Goodall</a></br>
+                    <a style = "font-weight: bold; font-size: 18; font-family: arial;">Chief Scientist</a>
+                </p>
+            </div>
             <div class ="middletitle">Middle Title</div>
             <div class ="righttitle">Right Title</div>
             <div class ="header">header</div>
