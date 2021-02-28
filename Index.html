@@ -8,14 +8,13 @@
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr .1fr .3fr 1fr .3fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
     grid-template-areas:
-    ". title1 ."
-    ". title1b ."
+    "title1 title1 title1"
+    "title1b title1b title1b"
     ". header ."
-    ". skillmatrix ."
-    ". programs ."
-    ". footer. ";
+    "skillmatrix skillmatrix skillmatrix"
+    "programs programs programs"
 }
 
 .title1 {
@@ -136,13 +135,13 @@
                     <a  style = "vertical-align:bottom; font-size: 14px; font-weight: bold; font-family: arial;">Director</a>
                 </p>
                 <p class="title3" style ="text-align:center;">
-                    <a  href="www.rtx.com"> <img src="spban.jpg" alt="Special Projects" width="auto" height="125"></a></br>
+                    <a  href="www.rtx.com"> <img src="spban.jpg" alt="Special Projects" width="auto" height="125"></br>
                     <a  style = "color: black; font-weight: bold; font-family: arial;" href="www.orgchart.com">Organizational Chart</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a  style = "color: black; font-weight: bold; font-family: arial;" href="www.hotjobs.com">Hot Jobs</a></br>
                 </p>    
                 <p class="title4" style ="text-align: center;">
-                    <a href="www.rtx.com"><img src="techdirector.jpg" alt="Tom Boxer" width="100" height="auto"></a></br>
+                    <img src="techdirector.jpg" alt="Tom Boxer" width="100" height="auto"></a></br>
                     <a style = "font-size: 14px; font-weight: bold; font-family: arial;">Tom Boxer</a></br>
                     <a style = "font-size: 14px; font-weight: bold; font-family: arial;">Tech Director</a>
                 </p>
@@ -159,7 +158,8 @@
                 </p>
             </div>
        
-            <div class ="header">"There's no operation we can't perform. We have the infrastructure, skills, and experience necessary to execute optimum outcomes."</div>
+            <div class ="header">
+                <p style="margin:0px;"> "There's no operation we can't perform. We have the infrastructure, skills, and experience necessary to execute optimum outcomes."</p></div>
             <div class ="skillmatrix">
                 <br>
                 <a style = "font-weight: bold; font-size: 22px; font-family: arial;">Skills Matrix</a>
