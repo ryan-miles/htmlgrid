@@ -7,13 +7,13 @@
 
 .grid {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr .3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr .3fr 1fr .3fr 1fr;
     grid-template-areas:
     "title1 title1 title1"
     ". header ."
-    "sidebar sidebar sidebar"
-    "content content content"
+    "skillmatrix skillmatrix skillmatrix"
+    ". programs ."
     "footer footer footer";
 }
 
@@ -52,12 +52,14 @@
     font-size: 20px;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.skillmatrix {
+    grid-area: skillmatrix;
+    text-align: center;
 }
 
-.content {
-    grid-area: content;
+.programs {
+    grid-area: programs;
+    text-align: center;
 }
 
 .footer {
@@ -65,15 +67,26 @@
 }
 
 .grid div {
-    border-style: solid;
+    border-style: none;
 }
 
 .grid a {
     text-decoration: none;
 }
 
-
-
+table {
+  width:100%;
+}
+table, th, td {
+  border:0px;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-family: arial;
+  font-weight: bold;
 @media only screen and (min-width: 700px) {
 
 
@@ -103,12 +116,29 @@
                 </p>
             </div>
             <div class ="header">"There's no operation we can't perform. We have the infrastructure, skills, and experience necessary to execute optimum outcomes."</div>
-            <div class ="sidebar">sidebar</div>
-            <div class ="content">
-              <p>Content A</p>
-              <p>Content B</p>
+            <div class ="skillmatrix">
+                <br>
+                <a style = "font-weight: bold; font-size: 22px; font-family: arial;">Skills Matrix</a>
+                <br>
+                <a href="www.skills.com"><img src="skillsmatrix.jpg" alt="Skills Matrix" width="auto" height="120"></a></br>
             </div>
-            <div class ="footer">footer</div>
+            <div class ="programs">
+                <a style = "font-weight: bold; font-size: 24px; font-family: arial;">Primary Programs</a>
+                <br>
+                <br>
+                <table>
+                    <tr>
+                      <td>BRIMSTONE</td>
+                      <td>CORE</td>
+                      <td>HELIOS</td>
+                    </tr>
+                    <tr>
+                      <td>JANUS</td>
+                      <td>MARS</td>
+                      <td>SWIFT</td>
+                    </tr>
+                  </table>
+            </div>
         </div>
         
     </body>
