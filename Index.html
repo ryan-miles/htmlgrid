@@ -8,9 +8,10 @@
 .grid {
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr .3fr 1fr .3fr 1fr;
+    grid-template-rows: 1fr .1fr .3fr 1fr .3fr 1fr;
     grid-template-areas:
     "title1 title1 title1"
+    "title1b title1b title1b"
     ". header ."
     "skillmatrix skillmatrix skillmatrix"
     ". programs ."
@@ -22,26 +23,65 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    align-items: end;
     grid-template-areas:
-    "title2 title3 title4";
+   "title2 title3 title4";
 }
 
 .title2 {
-    align-self: center;
+    border-style: solid;
+    border-width: thin;
     justify-self: self-end;
     width: 135px;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .title3 {
-    align-self: center;
     justify-self: center;
     width: auto;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .title4 {
-    align-self: center;
+    border-style: solid;
+    border-width: thin;
     justify-self: self-start;
     width: 135px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.title1b {
+    grid-area: title1b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: start;
+    grid-template-areas:
+    "title2b title3b title4b";
+}
+.title2b {
+    align-self: top;
+    justify-self: self-end;
+    width: 135px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.title3b {
+    align-self: center;
+    justify-self: center;
+    width: auto;
+    text-align: center;
+}
+
+.title4b {
+    align-self: top;
+    justify-self: self-start;
+    width: 135px;
+    text-align: center;
+    margin-top: 2px;
 }
 
 .header {
@@ -86,22 +126,34 @@
         <div class="grid">
             <div class ="title1">
                 <p class ="title2" style = "text-align: center;">
-                    <a  href="www.rtx.com"> <img src="jane.jpg" alt="Jane Goodall" width="100" height="120"></a>
-                    <a  style = "font-weight: bold; font-size: 18; font-family: arial;">Jane Goodall</a></br>
-                    <a  style = "font-weight: bold; font-size: 18; font-family: arial;">Chief Scientist</a>
+                    <a  href="www.rtx.com"> <img src="jane.jpg" alt="Jane Goodall" width="100" height="120"></a><br>
+                    <a  style = "font-size: 14px; font-weight: bold; font-family: arial; ">Jane Goodall</a></br>
+                    <a  style = "font-size: 14px; font-weight: bold; font-family: arial;">Chief Scientist</a>
                 </p>
-                <p class="title3" style ="text-align: center;">
+                <p class="title3" style ="font-size:text-align: center;">
                     <a  href="www.rtx.com"> <img src="sp.jpg" alt="Special Projects" width="auto" height="125"></a></br>
-                    <a  style = "color: black; font-weight: bold; font-size: 18; font-family: arial;" href="www.orgchart.com">Organizational Chart</a>
+                    <a  style = "color: black; font-weight: bold; font-family: arial;" href="www.orgchart.com">Organizational Chart</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a  style = "color: black; font-weight: bold; font-size: 18; font-family: arial;" href="www.hotjobs.com">Hot Jobs</a></br>
+                    <a  style = "color: black; font-weight: bold; font-family: arial;" href="www.hotjobs.com">Hot Jobs</a></br>
                 </p>    
                 <p class="title4" style ="text-align: center;">
                     <a href="www.rtx.com"><img src="tom.jpg" alt="Tom Boxer" width="100" height="120"></a></br>
-                    <a style = "font-weight: bold; font-size: 18; font-family: arial;">Tom Boxer</a></br>
-                    <a style = "font-weight: bold; font-size: 18; font-family: arial;"> Tough Guy</a>
+                    <a style = "font-size: 14px; font-weight: bold; font-family: arial;">Tom Boxer</a></br>
+                    <a style = "font-size: 14px; font-weight: bold; font-family: arial;"> Tough Guy</a>
                 </p>
             </div>
+            <div class ="title1b">
+                <p class ="title2b" style = "text-align: center;">
+                    <a  style = "font-weight: bold; font-size: 18; font-family: arial;">Vision/Goals</a></br>
+                </p>
+                <p class="title3b" style ="text-align: center;">
+                </br>
+                </p>    
+                <p class="title4b" style ="text-align: center;">
+                    <a style = "font-weight: bold; font-size: 18; font-family: arial;">Current Projects</a></br>
+                </p>
+            </div>
+       
             <div class ="header">"There's no operation we can't perform. We have the infrastructure, skills, and experience necessary to execute optimum outcomes."</div>
             <div class ="skillmatrix">
                 <br>
