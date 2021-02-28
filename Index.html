@@ -8,14 +8,13 @@
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .3fr 1fr 1fr 1fr;
     grid-template-areas:
     "title1 title1 title1"
-    "header header header"
+    ". header ."
     "sidebar sidebar sidebar"
     "content content content"
     "footer footer footer";
-    grid-gap: 1em;
 }
 
 .title1 {
@@ -47,6 +46,10 @@
 
 .header {
     grid-area: header;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .sidebar {
@@ -69,13 +72,8 @@
     text-decoration: none;
 }
 
-br {
-    line-height: 1px;
-}
 
-.a1 {
 
-}
 @media only screen and (min-width: 700px) {
 
 
@@ -88,23 +86,23 @@ br {
         <div class="grid">
             <div class ="title1">
                 <p class ="title2" style ="text-align: center;">
-                    <a class="a1" href="www.rtx.com"> <img src="jane.jpg" alt="Jane Goodall" width="100" height="120"></a></br>
-                    <a class="a1" style = "font-weight: bold; font-size: 18; font-family: arial;">Jane Goodall</a></br>
-                    <a class="a1" style = "font-weight: bold; font-size: 18; font-family: arial;">Chief Scientist</a>
+                    <a  href="www.rtx.com"> <img src="jane.jpg" alt="Jane Goodall" width="100" height="120"></a>
+                    <a  style = "font-weight: bold; font-size: 18; font-family: arial;">Jane Goodall</a></br>
+                    <a  style = "font-weight: bold; font-size: 18; font-family: arial;">Chief Scientist</a>
                 </p>
                 <p class="title3" style ="text-align: center;">
-                    <a class="a1" href="www.rtx.com"> <img src="sp.jpg" alt="Special Projects" width="auto" height="125"></a></br>
-                    <a class="a1" style = "color: black; font-weight: bold; font-size: 18; font-family: arial;" href="www.orgchart.com">Organizational Chart</a>
+                    <a  href="www.rtx.com"> <img src="sp.jpg" alt="Special Projects" width="auto" height="125"></a></br>
+                    <a  style = "color: black; font-weight: bold; font-size: 18; font-family: arial;" href="www.orgchart.com">Organizational Chart</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="a1" style = "color: black; font-weight: bold; font-size: 18; font-family: arial;" href="www.hotjobs.com">Hot Jobs</a></br>
+                    <a  style = "color: black; font-weight: bold; font-size: 18; font-family: arial;" href="www.hotjobs.com">Hot Jobs</a></br>
                 </p>    
-                <p class="title4" style ="text-align: center;"><a href="www.rtx.com">
-                    <img src="tom.jpg" alt="Tom Boxer" width="100" height="120"></a></br>
+                <p class="title4" style ="text-align: center;">
+                    <a href="www.rtx.com"><img src="tom.jpg" alt="Tom Boxer" width="100" height="120"></a></br>
                     <a style = "font-weight: bold; font-size: 18; font-family: arial;">Tom Boxer</a></br>
                     <a style = "font-weight: bold; font-size: 18; font-family: arial;"> Tough Guy</a>
                 </p>
             </div>
-            <div class ="header">header</div>
+            <div class ="header">"There's no operation we can't perform. We have the infrastructure, skills, and experience necessary to execute optimum outcomes."</div>
             <div class ="sidebar">sidebar</div>
             <div class ="content">
               <p>Content A</p>
