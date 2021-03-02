@@ -10,15 +10,30 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    ". title ."
-    "header header ."
+    "title title title"
+    "header header header"
     "footer footer footer"
     ". content ."
 }
 
 .title {
     grid-area: title;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+   "titleA titleB titleC";
 }
+.titleA {
+    grid-area: titleA;
+}
+.titleB {
+    grid-area: titleB;
+}
+.titleC {
+    grid-area: titleC;
+}
+
 .header {
     grid-area: header;
 }
@@ -40,13 +55,20 @@
    
 </style>
     </head>
-
     <body>
         <div class="grid">
             <div class ="title">
+            <p class ="titleA" style="background-color: slategray;">
             title   
-            </div>
-        
+            </p>
+            <p class ="titleB" style="background-color: steelblue;">
+            title   
+            </p>
+            <p class ="titleC" style="background-color: teal;">
+            title   
+            </p>
+         </div>            
+
             <div class ="header">
             header
             </div>    
