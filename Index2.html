@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+    grid-template-areas:
+    "title title title"
+    ". header ."
+    "skillmatrix skillmatrix skillmatrix"
+    "programs programs programs"
+}
+
+.title {
+    grid-area: title;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: end;
+    justify-items: center;
+    grid-template-areas:
+   "title2 title3 title4";
+}
+
+.title2 {
+    border-style: solid;
+    border-width: thin;
+    justify-self: self-end;
+    width: 135px;
+    height: 190px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.title3 {
+    justify-self: center;
+    width: auto;
+    text-align: center;
+    width: 700px;
+    margin-bottom: 0px;
+}
+
+.title4 {
+    border-style: solid;
+    border-width: thin;
+    justify-self: self-start;
+    width: 135px;
+    height: 190px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.skillmatrix {
+    grid-area: skillmatrix;
+    text-align: center;
+}
+
+.programs {
+    grid-area: programs;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid div {
+    border-style:none;
+}
+
+.grid a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+
+
+}
+   
+</style>
+    </head>
+
+    <body>
+        <div class="grid">
+            <div class ="title">
+                <p class ="title2" style = "text-align: center;">
+                    <img src="director.jpg" alt="Jane Goodall" width="100" height="auto"><br>
+                    <a  style = "vertical-align:bottom; font-size: 14px; font-weight: bold; font-family: arial; ">Jane Goodall</a></br>
+                    <a  style = "vertical-align:bottom; font-size: 14px; font-weight: bold; font-family: arial;">Director</a>
+                </p>
+                <p class="title3" style ="text-align:center;">
+                    <img src="spban.jpg" alt="Special Projects" width="auto" height="125"></br>
+                    <a  style = "color: black; font-weight: bold; font-family: arial;" href="www.orgchart.com">Organizational Chart</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a  style = "color: black; font-weight: bold; font-family: arial;" href="www.hotjobs.com">Hot Jobs</a></br>
+                </p>    
+                <p class="title4" style ="text-align: center;">
+                    <img src="techdirector.jpg" alt="Tom Boxer" width="100" height="auto"></a></br>
+                    <a style = "font-size: 14px; font-weight: bold; font-family: arial;">Tom Boxer</a></br>
+                    <a style = "font-size: 14px; font-weight: bold; font-family: arial;">Tech Director</a>
+                </p>
+            </div>
+ 
+            <div class ="header">
+                <p style="margin:0px;"> "There's no operation we can't perform. We have the infrastructure, skills, and experience necessary to execute optimum outcomes."</p></div>
+            <div class ="skillmatrix">
+                <br>
+                <a style = "font-weight: bold; font-size: 22px; font-family: arial;">Skills Matrix</a>
+                <br>
+                <img src="spskills.png" alt="Skills Matrix" width="auto" height="120"></br>
+            </div>
+            <div class ="programs">
+                <a style = "font-weight: bold; font-size: 22px; font-family: arial;">Primary Programs</a>
+                <br>
+                <br>
+                <table style="margin-right: auto; margin-left: auto; border:none; border-collapse: collapse; text-align: center; font-size: 22px; font-family: arial;font-weight: bold;">
+                    <tr>
+                      <td style=" padding-top: 5px;padding-bottom: 5px;padding-left:3em;padding-right:3em;">BRIMSTONE</td>
+                      <td style=" padding-top: 5px;padding-bottom: 5px;padding-left:3em;padding-right:3em;">CORE</td>
+                      <td style=" padding-top: 5px;padding-bottom: 5px;padding-left:3em;padding-right:3em;">HELIOS</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-top: 5px;padding-bottom: 5px;padding-left:3em;padding-right:3em;">JANUS</td>
+                      <td style=" padding-top: 5px;padding-bottom: 5px;padding-left:3em;padding-right:3em;">MARS</td>
+                      <td style=" padding-top: 5px;padding-bottom: 5px;padding-left:3em;padding-right:3em;">SWIFT</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        
+    </body>
+</html>
