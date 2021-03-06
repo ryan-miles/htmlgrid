@@ -21,6 +21,11 @@
   color: white;
 }
 
+#active {
+  background-color: #8f0209;
+  color: white;
+}
+
 .topnav .icon {
   display: none;
 }
