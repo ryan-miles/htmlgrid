@@ -228,9 +228,9 @@ text-align: center;
 .footer {
 grid-area: footer;
 text-align: center;
-padding: 1em;
-background-color: rgba(63, 79, 99, 0.274);
-border-radius: 40px;
+padding: .5em;
+background-color: rgba(63, 79, 99, 0.151);
+border-radius: 15px;
 }
 
 .grid a {
