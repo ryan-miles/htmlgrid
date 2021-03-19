@@ -155,7 +155,7 @@
     grid-area: title2;
     border-style: solid;
     border-width: thin;
-    -ms-grid-column-align:end;
+    -ms-grid-column-align:center;
         justify-self: end;
     width: 135px;
     height: 190px;
@@ -168,8 +168,7 @@
     -ms-grid-column: 2;
     grid-area: title3;
     -ms-grid-column-align:center;
-        justify-self: center;
-    width: auto;
+    justify-self: center;
     text-align: center;
     width: 700px;
     margin-bottom: 0px;
@@ -181,7 +180,7 @@
     grid-area: title4;
     border-style: solid;
     border-width: thin;
-    -ms-grid-column-align: start;
+    -ms-grid-column-align:center;
         justify-self: self-start;
     width: 135px;
     height: 190px;
