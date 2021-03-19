@@ -123,7 +123,6 @@
     display:grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
     "title1 title1 title1 title1 title1"
     "title1b title1b title1b title1b title1b"
@@ -142,7 +141,6 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .1fr;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
@@ -199,7 +197,6 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .1fr;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
