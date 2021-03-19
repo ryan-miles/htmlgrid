@@ -133,119 +133,168 @@
     ". programs programs programs ."
     "footer footer footer footer footer"
     }
-
-.title1 {
-grid-area: title1;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-align-items: end;
-justify-items: center;
-grid-template-areas:
-"title2 title3 title4";
-}
-
-.title2 {
-grid-area: title2;
-border-style: solid;
-border-width: thin;
-justify-self: self-end;
-width: 135px;
-height: 190px;
-text-align: center;
-margin-bottom: 0px;
-}
-
-.title3 {
-grid-area: title3;
-justify-self: center;
-width: auto;
-text-align: center;
-width: 700px;
-margin-bottom: 0px;
-}
-
-.title4 {
-grid-area: title4;
-border-style: solid;
-border-width: thin;
-justify-self: self-start;
-width: 135px;
-height: 190px;
-text-align: center;
-margin-bottom: 0px;
-}
-.title1b {
-grid-area: title1b;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-align-items: start;
-justify-items: center;
-grid-template-areas:
-"title2b title3b title4b";
-}
-.title2b {
-grid-area: title2b;
-align-self: top;
-justify-self: self-end;
-width: 135px;
-text-align: center;
-margin-top: 2px;
-}
-
-.title3b {
-grid-area: title3b;
-align-self: center;
-justify-self: center;
-width: 700px;
-text-align: center;
-}
-
-.title4b {
-grid-area: title4b;
-align-self: top;
-justify-self: self-start;
-width: 135px;
-text-align: center;
-margin-top: 2px;
-}
-
-.header {
-grid-area: header;
-text-align: center;
-font-family: arial;
-font-weight: bold;
-font-size: 20px;
-}
-
-.skillmatrix {
-grid-area: skillmatrix;
-text-align: center;
-}
-
-.programs {
-grid-area: programs;
-text-align: center;
-}
-
-.footer {
-grid-area: footer;
-text-align: center;
-padding: .5em;
-background-color: rgba(63, 79, 99, 0.151);
-border-radius: 15px;
-}
-
-.grid a {
-color:black;
-text-decoration: none;
-}
-
-a.programlink:hover, a.programlink:active {
-text-shadow: .04em .04em rgb(8, 34, 54); 
-text-decoration: underline;
-}
+    
+    .title1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: title1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    justify-items: center;
+        grid-template-areas:
+    "title2 title3 title4";
+    }
+    
+    .title2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title2;
+    border-style: solid;
+    border-width: thin;
+    -ms-grid-column-align: self-end;
+        justify-self: self-end;
+    width: 135px;
+    height: 190px;
+    text-align: center;
+    margin-bottom: 0px;
+    }
+    
+    .title3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: title3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: auto;
+    text-align: center;
+    width: 700px;
+    margin-bottom: 0px;
+    }
+    
+    .title4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: title4;
+    border-style: solid;
+    border-width: thin;
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
+    width: 135px;
+    height: 190px;
+    text-align: center;
+    margin-bottom: 0px;
+    }
+    .title1b {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: title1b;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: center;
+        grid-template-areas:
+    "title2b title3b title4b";
+    }
+    .title2b {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title2b;
+    -ms-grid-row-align: top;
+        align-self: top;
+    -ms-grid-column-align: self-end;
+        justify-self: self-end;
+    width: 135px;
+    text-align: center;
+    margin-top: 2px;
+    }
+    
+    .title3b {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: title3b;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 700px;
+    text-align: center;
+    }
+    
+    .title4b {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: title4b;
+    -ms-grid-row-align: top;
+        align-self: top;
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
+    width: 135px;
+    text-align: center;
+    margin-top: 2px;
+    }
+    
+    .header {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: header;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    
+    .skillmatrix {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: skillmatrix;
+    text-align: center;
+    }
+    
+    .programs {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: programs;
+    text-align: center;
+    }
+    
+    .footer {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: footer;
+    text-align: center;
+    padding: .5em;
+    background-color: rgba(63, 79, 99, 0.151);
+    border-radius: 15px;
+    }
+    
+    .grid a {
+    color:black;
+    text-decoration: none;
+    }
+    
+    a.programlink:hover, a.programlink:active {
+    text-shadow: .04em .04em rgb(8, 34, 54); 
+    text-decoration: underline;
+    }
 
 
 
