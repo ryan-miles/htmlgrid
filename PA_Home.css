@@ -118,18 +118,21 @@
       text-align: left;
     }
   }
-.grid {
-display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
-grid-template-areas:
-"title1 title1 title1 title1 title1"
-"title1b title1b title1b title1b title1b"
-". header header header ."
-"skillmatrix skillmatrix skillmatrix skillmatrix skillmatrix"
-". programs programs programs ."
-"footer footer footer footer footer"
-}
+  .grid {
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+        grid-template-areas:
+    "title1 title1 title1 title1 title1"
+    "title1b title1b title1b title1b title1b"
+    ". header header header ."
+    "skillmatrix skillmatrix skillmatrix skillmatrix skillmatrix"
+    ". programs programs programs ."
+    "footer footer footer footer footer"
+    }
 
 .title1 {
 grid-area: title1;
