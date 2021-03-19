@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Note: Cut the <links between this comment and the </head> tag and past them intot he top of the style sheet for CEWP/SharePoint -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="HubPage.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">CTS Catalog Home</a>
+            <a href="#home" >Collab Hubs Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Hub Sites
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">5G</a>
+                <a href="#">Cloud</a>
+                <a href="#">DevSecOps</a>
+                <a href="#">Data Science</a>
+                <a href="#">Emulation</a>
+                <a href="#">Program Mgmt</a>
+                <a href="#">Training</a>
+                <a href="#">Virtual Ops</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button id="active" class="dropbtn">
+                AI/ML
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Proj 1</a>
+                <a href="#">Proj 2</a>
+                <a href="#">Proj 3</a>
+              </div>
+            </div>
+            <a
+              href="javascript:void(0);"
+              style="font-size: 15px"
+              class="icon"
+              onclick="myFunction()"
+              >&#9776;</a
+            >
+          </div>
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+          </script>
+<br>
+<div class="grid">
+    <div class ="commander">
+        <img src="emulationcommander.png" alt="Greg Price" width="100px" height="auto"></a>
+    </div>
+
+    <div class ="banner">
+        <img src="embanner.png" alt="Emulation Hub" width="auto" height="auto"></a>
+    </div>
+    
+    <div class ="description">
+        <p>Information about the Emulation Hub. Information about the Emulation Hub. Information about the Emulation Hub. Information about the Emulation Hub. Information about the Emulation Hub. Information about the Emulation Hub. </p>
+    </div>
+    <div class ="contentgrid">
+        <a class="content1"> <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe> </a>
+        <a class="content2"> <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/38hAlZs_4_8">
+                        </iframe> </a>
+        <a class="content3"> <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/kbJcQYVtZMo">
+                        </iframe>   </a>
+    </div>
+</div>
+
+<script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+          </script>
+    </body>
+</html>
