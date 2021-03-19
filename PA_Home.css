@@ -123,8 +123,7 @@
     display:grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
     "title1 title1 title1 title1 title1"
     "title1b title1b title1b title1b title1b"
@@ -143,8 +142,7 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: .1fr;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
@@ -159,8 +157,8 @@
     grid-area: title2;
     border-style: solid;
     border-width: thin;
-    -ms-grid-column-align: self-end;
-        justify-self: self-end;
+    -ms-grid-column-align:end;
+        justify-self: end;
     width: 135px;
     height: 190px;
     text-align: center;
@@ -171,7 +169,7 @@
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: title3;
-    -ms-grid-column-align: center;
+    -ms-grid-column-align:center;
         justify-self: center;
     width: auto;
     text-align: center;
@@ -185,7 +183,7 @@
     grid-area: title4;
     border-style: solid;
     border-width: thin;
-    -ms-grid-column-align: self-start;
+    -ms-grid-column-align: start;
         justify-self: self-start;
     width: 135px;
     height: 190px;
@@ -201,8 +199,7 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: .1fr;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -216,7 +213,7 @@
     grid-area: title2b;
     -ms-grid-row-align: top;
         align-self: top;
-    -ms-grid-column-align: self-end;
+    -ms-grid-column-align: end;
         justify-self: self-end;
     width: 135px;
     text-align: center;
@@ -241,7 +238,7 @@
     grid-area: title4b;
     -ms-grid-row-align: top;
         align-self: top;
-    -ms-grid-column-align: self-start;
+    -ms-grid-column-align: start;
         justify-self: self-start;
     width: 135px;
     text-align: center;
