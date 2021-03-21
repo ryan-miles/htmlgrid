@@ -1,6 +1,9 @@
  /*Note: Add Style Tags before and after below when saving as css file linked through CEWP in SharePoint*/
   /*Also: Paste in <links> to Style sheets for fonts above the <style> open tag*/
-  .topnav {
+   .topnav {
+    margin-left: auto;
+    margin-right: auto;
+    width:960px;
     overflow: hidden;
     background-color: #333;
     font-family: 'Righteous', cursive;
@@ -118,43 +121,52 @@
   }
   
   .grid {
+  margin-left: auto;
+  margin-right: auto;
+  width:960px;
   display:grid;
   border-style: none;
   border-width: thin;
-  grid-template-columns:.1fr .8fr .2fr .1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr;
   grid-template-rows: .1fr .1fr .1fr .1fr;
   grid-template-areas:
-    ". banner commander ."
-    ". description description ."
-    "contentgrid contentgrid contentgrid contentgrid"    
+    "banner banner banner banner "
+    "description description  description description "
+    "contentgrid1 contentgrid1 contentgrid1 contentgrid1"    
+    "contentgrid2 contentgrid2 contentgrid2 contentgrid2"    
     }
   
   .commander {
   grid-area: commander;
   border-style: none;
   border-width: thin;
-   justify-self: center;
+  justify-self: center;
   align-self: center;
   width: auto;
-   text-align: center;
+  text-align: center;
   }
   
   .banner {
   grid-area: banner;
   border-style: none;
   border-width: thin;
+  justify-self: center;
+  align-self: center;
+  width: auto;
   text-align: center;
   }
 
   .description {
     grid-area: description;
+    font-family: arial;
+    font-size: 1.2em;
     border-style: none;
     border-width: thin;
     text-align: center;
     }
   
-  .contentgrid {
-    grid-area:contentgrid;
+  .contentgrid1 {
+    grid-area:contentgrid1;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -162,41 +174,88 @@
     justify-items: center;
     grid-template-areas:
     "content1 content2 content3"
-  }  
-
-  .content1 {
-    grid-area: content1;
-    border-style: none;
-    border-width: thin;
-    text-align: center;
-    }
-
-  .content2 {
-  grid-area: content2;
-  border-style: none;
-  border-width: thin;
-  text-align: center;
-  }
-
-  .content3 {
-    grid-area: content3;
+    }  
+  
+    .content1 {
+      grid-area: content1;
+      border-style: none;
+      border-width: thin;
+      text-align: center;
+      }
+  
+    .content2 {
+    grid-area: content2;
     border-style: none;
     border-width: thin;
     text-align: center;
     }
   
+    .content3 {
+      grid-area: content3;
+      border-style: none;
+      border-width: thin;
+      text-align: center;
+      }
+  
+      .contentgrid2 {
+        grid-area:contentgrid2;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items:flex-start;
+        justify-items: center;
+        grid-template-areas:
+        "content4 content5 content6"
+      }  
+    
+      .content4 {
+        grid-area: content4;
+        border-style: none;
+        border-width: thin;
+        text-align: center;
+        }
+    
+      .content5 {
+      grid-area: content5;
+      border-style: none;
+      border-width: thin;
+      text-align: center;
+      }
+    
+      .content6 {
+        grid-area: content6;
+        border-style: none;
+        border-width: thin;
+        text-align: center;
+        }
+      
   .grid a {
   color:black;
   text-decoration: none;
   }
   
-  a.programlink:hover, a.programlink:active {
-  text-shadow: .04em .04em rgb(8, 34, 54); 
-  text-decoration: underline;
+  #card {
+    /* Add shadows to create the "card" effect */
+    width: 300px;
+    height: 285px;
+    padding-top: .5em;
+    display:flex;/*CSS3*/
+    align-items:flex-start;/*Vertical align*/
+    justify-content:center;/*horizontal align*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
   }
   
-  
-  
+  /* On mouse-over, add a deeper shadow */
+  #card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container {
+    padding: 2px 8px;
+    font-family: arial;
+  }
+
   @media only screen and (min-width: 700px) {
   
   
