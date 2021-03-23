@@ -8,6 +8,7 @@
     width:960px;
     overflow: hidden;
     background-color: #333;
+    border-radius: 3px;
     font-family: 'Righteous', cursive;
   }
   
@@ -258,22 +259,37 @@
     font-family: arial;
   }
  
-    .info {
-      width: 960px;
-      height: 25px;
-      display:flex;/*CSS3*/
-      align-items:center;/*Vertical align*/
-      justify-content:center;/*horizontal align*/
-      font-family: arial;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 6px;
-      padding: 2px;
-      background-color: #e7f3fe;
-      border-left: 8px solid #2196F3;
+  .info {
+    width: 960px;
+    height: 25px;
+    display:flex;/*CSS3*/
+    align-items:center;/*Vertical align*/
+    justify-content:center;/*horizontal align*/
+    font-family: arial;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+    padding: 2px;
+    background-color: #e7f3fe;
+    border-left: 8px solid #2196F3;
     }
  
+  .bar{
+    width: 960px;
+    height: 25px;
+    display:flex;/*CSS3*/
+    align-items:center;/*Vertical align*/
+    justify-content:center;/*horizontal align*/
+    font-family: arial;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+    padding: 2px;
+    border-radius: 6px;
+    background-color:orange;
 
+  }
   @media only screen and (min-width: 700px) {
   
   
