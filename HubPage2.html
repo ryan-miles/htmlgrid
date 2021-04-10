@@ -1,138 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- Note: Cut the <links between this comment and the </head> tag and past them into the top of the style sheet for CEWP/SharePoint -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="HubPage.css">
-    </head>
-    <body>
-
-      <p class="info"><strong>Note:</strong> &nbsp Use Google Chrome for optimal experience. Chrome can be installed via the Raytheon AppStore.</p>
-
-      <div class="topnav" id="myTopnav">
-            <a href="#home">CTS Catalog Home</a>
-            <a href="#home" >Collab Hubs Home</a>
-            <div class="dropdown">
-              <button class="dropbtn">
-                Hub Sites
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">5G</a>
-                <a href="#">Cloud</a>
-                <a href="#">DevSecOps</a>
-                <a href="#">Data Science</a>
-                <a href="#">Emulation</a>
-                <a href="#">Program Mgmt</a>
-                <a href="#">Training</a>
-                <a href="#">Virtual Ops</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button id="active" class="dropbtn">
-                AI/ML
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Proj 1</a>
-                <a href="#">Proj 2</a>
-                <a href="#">Proj 3</a>
-              </div>
-            </div>
-            <a
-              href="javascript:void(0);"
-              style="font-size: 15px"
-              class="icon"
-              onclick="myFunction()"
-              >&#9776;</a
-            >
-          </div>
-          <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-          </script>
-<br>
-<div class="grid">
-    <div class ="banner" style="margin-top: -15px;">
-        <img src="/SiteAssets/Graphics/embanner.png" alt="Emulation Hub" width="960px" height="auto"></a>
-    </div>
-
-  <div class='bar'>Featured Content</div>
-    <div class ="contentgrid1" style="margin-top: 0px;">
-      <div class="content1"  id='card'>
-        <div class="container">
-          <iframe width="285" height="auto"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-            <p>By: Greg Price [Posted: 3/20/2021]</p>
-            <p>Short note with some interesting info about this blog post.</p>
-        </div>
-      </div>
-      <div class="content2"  id='card'>
-        <div class="container">
-          <iframe width="285" height="auto"
-          src="https://www.youtube.com/embed/38hAlZs_4_8">
-        </iframe>
-            <p>By: Greg Price [Posted: 3/20/2021]</p>
-            <p>Short note with some interesting info about this blog post.</p>
-        </div>
-      </div>
-      <div class="content3"  id='card'>
-        <div class="container">
-          <iframe width="285" height="auto"
-          src="https://www.youtube.com/embed/ZQ--scjcAZ4">
-        </iframe>
-            <p>By: Greg Price [Posted: 3/20/2021]</p>
-            <p>Short note with some interesting info about this blog post.</p>
-        </div>
-    </div>
-  </div>
-
-    <div class ="contentgrid2" style="padding-top: 1em;">
-        <div class="content4"  id='card'>
-          <div class="container">
-            <img src="/SiteAssets/Graphics/quantum.png">
-            <p>By: Greg Price [Posted: 3/20/2021]</p>
-              <p>Short note with some interesting info about this blog post.</p>
-          </div>
-        </div>
-        <div class="content5"  id='card'>
-          <div class="container">
-            <img src="/SiteAssets/Graphics/chip.png">
-              <p>By: Greg Price [Posted: 3/20/2021]</p>
-              <p>Short note with some interesting info about this blog post.</p>
-          </div>
-        </div>
-        <div class="content6"  id='card'>
-          <div class="container">
-            <img src="/SiteAssets/Graphics/circuit.png">
-              <p>By: Greg Price [Posted: 3/20/2021]</p>
-              <p>Short note with some interesting info about this blog post.</p>
-          </div>
-        </div>
-    </div>
-
-<script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-          </script>
-    </body>
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- Note: Cut the <links between this comment and the </head> tag and past them into the top of the style sheet for CEWP/SharePoint -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<link href="HubPage.css" rel="stylesheet">
+	<link href="Collapsible.css" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<p class="info"><strong>Note:</strong> &nbsp; Use Google Chrome for optimal experience. Chrome can be installed via the Raytheon AppStore.</p>
+	<div class="topnav" id="myTopnav">
+		<a href="#home">CTS Catalog Home</a> <a href="#home">Collab Hubs Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Hub Sites <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href="#">5G</a> <a href="#">Cloud</a> <a href="#">DevSecOps</a> <a href="#">Data Science</a> <a href="#">Emulation</a> <a href="#">Program Mgmt</a> <a href="#">Training</a> <a href="#">Virtual Ops</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn" id="active">AI/ML <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href="#">Proj 1</a> <a href="#">Proj 2</a> <a href="#">Proj 3</a>
+			</div>
+		</div><a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size: 15px">&#9776;</a>
+	</div>
+	<script>
+	           function myFunction() {
+	             var x = document.getElementById("myTopnav");
+	             if (x.className === "topnav") {
+	               x.className += " responsive";
+	             } else {
+	               x.className = "topnav";
+	             }
+	           }
+	</script><br>
+	<div class="grid">
+		<div class="banner" style="margin-top: -15px;"><img alt="Emulation Hub" height="auto" src="/SiteAssets/Graphics/embanner.png" width="960px"></div><button class="accordion">Section 1</button>
+		<div class="panel">
+			<div class="contentgrid1" style="margin-top: -20px;">
+				<div class="content1" id='card'>
+					<div class="container">
+						<iframe height="auto" src="https://www.youtube.com/embed/tgbNymZ7vqY" width="285"></iframe>
+						<p>By: Greg Price [Posted: 3/20/2021]</p>
+						<p>Short note with some interesting info about this blog post.</p>
+					</div>
+				</div>
+				<div class="content2" id='card'>
+					<div class="container">
+						<iframe height="auto" src="https://www.youtube.com/embed/38hAlZs_4_8" width="285"></iframe>
+						<p>By: Greg Price [Posted: 3/20/2021]</p>
+						<p>Short note with some interesting info about this blog post.</p>
+					</div>
+				</div>
+				<div class="content3" id='card'>
+					<div class="container">
+						<iframe height="auto" src="https://www.youtube.com/embed/ZQ--scjcAZ4" width="285"></iframe>
+						<p>By: Greg Price [Posted: 3/20/2021]</p>
+						<p>Short note with some interesting info about this blog post.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentgrid2" style="padding-top: 1em;">
+			<div class="content4" id='card'>
+				<div class="container">
+					<img src="/SiteAssets/Graphics/quantum.png">
+					<p>By: Greg Price [Posted: 3/20/2021]</p>
+					<p>Short note with some interesting info about this blog post.</p>
+				</div>
+			</div>
+			<div class="content5" id='card'>
+				<div class="container">
+					<img src="/SiteAssets/Graphics/chip.png">
+					<p>By: Greg Price [Posted: 3/20/2021]</p>
+					<p>Short note with some interesting info about this blog post.</p>
+				</div>
+			</div>
+			<div class="content6" id='card'>
+				<div class="container">
+					<img src="/SiteAssets/Graphics/circuit.png">
+					<p>By: Greg Price [Posted: 3/20/2021]</p>
+					<p>Short note with some interesting info about this blog post.</p>
+				</div>
+			</div>
+		</div>
+		<script>
+		          function myFunction() {
+		            var x = document.getElementById("myTopnav");
+		            if (x.className === "topnav") {
+		              x.className += " responsive";
+		            } else {
+		              x.className = "topnav";
+		            }
+		          }
+		</script> 
+		<script src="Collapsible.js">
+		</script>
+	</div>
+</body>
 </html>
