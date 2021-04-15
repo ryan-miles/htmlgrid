@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Note: Cut the <links between this comment and the </head> tag and past them intot he top of the style sheet for CEWP/SharePoint -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="HubHomeNG.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/PM.aspx">PM Home</a>
+            <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/CODEX.aspx">CODEX</a>
+            <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/GTL.aspx">GTL</a>
+            <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/CPS.aspx">CPS</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                HCM
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/HCM.aspx">HCM Home</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/COMET.aspx">COMET</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/POLARIS.aspx">POLARIS</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/HUNTER.aspx">HUNTER</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/GOLDFINCH.aspx">GOLDFINCH</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/ITDAS.aspx">ITDAS</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/KODIAK.aspx">KODIAK</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/LONDINIUM.aspx">LONDINIUM</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/HIVE.aspx">HIVE</a>
+            </div>
+          </div>
+            <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/PS.aspx">PS</a>
+            <div class="dropdown">
+              <button class="dropbtn" id="active">
+                SP
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a id="active" href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/SP.aspx">SP Home</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/BRIMSTONE.aspx">BRIMSTONE</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/CORE.aspx">CORE</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/HELIOS.aspx">HELIOS</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/JANUS.aspx">JANUS</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/MARS.aspx">MARS</a>
+                <a href="https://raytheon.sharepoint.us/sites/csm-catalog/collaboration-hubs/Pages/SWIFT.aspx">SWIFT</a>
+              </div>
+          </div>
+      
+            <a
+              href="javascript:void(0);"
+              style="font-size: 15px"
+              class="icon"
+              onclick="myFunction()"
+              >&#9776;</a
+            >
+          </div>
+        <br>
+
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+          </script>
+    </body>
+</html>
