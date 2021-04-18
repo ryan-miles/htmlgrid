@@ -1,10 +1,7 @@
 /*VVV--------------TopNav styling below--------------VVV*/
-
 .topnav {
   overflow: hidden;
-  box-shadow: 2px 2px rgba(85, 85, 85, 0.199);
-  padding: .2em;
-  border-style: none;
+  border-style: solid;
   border-width: thin;
   background-color: rgb(255, 255, 255);
   font-family: 'Righteous', cursive;
@@ -120,7 +117,7 @@
     text-align: left;
   }
 }
-/*^^^--------------CSS Grid styling above--------------^^^*/
+/*^^^--------------TopNav styling above--------------^^^*/
 
 
 
@@ -138,6 +135,8 @@
   
   .banner {
   grid-area:banner;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-self: center;
   align-self: center;
   border-style: none;
@@ -161,7 +160,6 @@
 
   .folders {
     grid-area: folders;
-    margin-top: -20px;
     justify-self: center;
     align-self: center;
     border-style: none;
@@ -188,12 +186,3 @@ transform: translateX(-1px);
 transition: .2s ease;
 }
   /*^^^--------------Hover Styling for Shadow Image Above--------------^^^*/
-
-  /*VVV--------------Hover Grow/Shrink Styling Below--------------VVV*/
-.grow:hover
-{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-}
-    /*^^^--------------Hover Grow/Shrink Above--------------^^^*/
