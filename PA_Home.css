@@ -1,32 +1,35 @@
- /*Note: Add Style Tags before and after below when saving as css file linked through CEWP in SharePoint*/
-  /*Also: Paste in <links> to Style sheets for fonts above the <style> open tag*/
-  .topnav {
-    overflow: hidden;
-    border-style: solid;
-    border-width: thin;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Righteous', cursive;
-  }
+/*Note: Add Style Tags before and after below when saving as css file linked through CEWP in SharePoint*/
+/*Also: Paste in <links> to Style sheets for fonts above the <style> open tag*/
+
+/*VVV--------------TopNav styling below--------------VVV*/
+.topnav {
+overflow: hidden;
+border-radius: 10px;
+border-style: solid;
+border-width: thin;
+background-color: rgb(255, 255, 255);
+font-family: 'Righteous', cursive;
+}
   
-  .topnav a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 5px 16px 5px 16px;
-    text-decoration: none;
-    font-size: 15px;
-  }
+.topnav a {
+float: left;
+display: block;
+color: #000000;
+text-align: center;
+padding: 5px 16px 5px 16px;
+text-decoration: none;
+font-size: 15px;
+}
   
-  .active {
-    background-color: #8f0209;
-    color: rgb(0, 0, 0);
-  }
+.active {
+ background-color: #8f0209;
+ color: rgb(0, 0, 0);
+ }
   
-  #active {
-    background-color: #8f0209;
-    color: white;
-  }
+ #active {
+ background-color: #8f0209;
+ color: white;
+ }
   
   .topnav .icon {
     display: none;
@@ -118,6 +121,9 @@
       text-align: left;
     }
   }
+  /*^^^--------------TopNav styling above--------------^^^*/
+
+  /*VVV--------------CSS Grid styling below--------------VVV*/
   .grid {
     display:-ms-grid;
     display:grid;

@@ -1,6 +1,10 @@
+/*Note: Add Style Tags before and after below when saving as css file linked through CEWP in SharePoint*/
+/*Also: Paste in <links> to Style sheets for fonts above the <style> open tag*/
+
 /*VVV--------------TopNav styling below--------------VVV*/
 .topnav {
   overflow: hidden;
+  border-radius: 10px;
   border-style: solid;
   border-width: thin;
   background-color: rgb(255, 255, 255);
@@ -153,7 +157,8 @@
   grid-area: library;
   justify-self:center;
   align-self: center;
-  border-style: none;
+  border-radius: 10px; 
+  border-style: solid;
   border-width: thin;
   font-family: 'Righteous', cursive;
   }
@@ -185,4 +190,6 @@ box-shadow:
 transform: translateX(-1px);
 transition: .2s ease;
 }
-  /*^^^--------------Hover Styling for Shadow Image Above--------------^^^*/
+/*^^^--------------Hover Styling for Shadow Image Above--------------^^^*/
+
+@media only screen and (min-width: 700px){}
