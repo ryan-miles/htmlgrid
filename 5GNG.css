@@ -2,7 +2,9 @@
 
 .topnav {
   overflow: hidden;
-  border-style: solid;
+  box-shadow: 2px 2px rgba(85, 85, 85, 0.199);
+  padding: .2em;
+  border-style: none;
   border-width: thin;
   background-color: rgb(255, 255, 255);
   font-family: 'Righteous', cursive;
@@ -126,33 +128,44 @@
 .grid {
   display:grid;
   grid-template-columns:1fr 500px 500px 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr;
   grid-template-areas:
-  ". title title ."
-  ". header header ."
-  ". sidebar content ."
-  ". footer footer ."
+  ". banner banner ."
+  ". tiles tiles ."
+  ". library library ."
+  ". folders folders ."
   }
   
-  .title {
-  grid-area: title;
-  border-style: solid;
+  .banner {
+  grid-area:banner;
+  justify-self: center;
+  align-self: center;
+  border-style: none;
   }
 
-  .header {
-  grid-area: header;
-  border-style: solid;
+  .tiles {
+  grid-area: tiles;
+  justify-self: center;
+  align-self: center;
+  border-style: none;
   }
   
-  .sidebar {
-  grid-area: sidebar;
-  border-style: solid;
+  .library {
+  grid-area: library;
+  justify-self:center;
+  align-self: center;
+  border-style: none;
+  border-width: thin;
+  font-family: 'Righteous', cursive;
   }
 
-  .content {
-  grid-area:content;
-  border-style: solid;
-  }
+  .folders {
+    grid-area: folders;
+    margin-top: -20px;
+    justify-self: center;
+    align-self: center;
+    border-style: none;
+    }
   
   .footer {
    grid-area: footer;
@@ -160,5 +173,27 @@
    }
 /*^^^--------------CSS Grid styling above--------------^^^*/
 
-          
+/*VVV--------------Hover Styling For Shadow Image Below--------------VVV*/
+.shadow img {
+transition: .2s ease;
+}
   
+.shadow img:hover{
+box-shadow:
+4px 4px #373737,
+5px 5px #373737,
+6px 6px #373737;
+-webkit-transform: translateX(-1px);
+transform: translateX(-1px);
+transition: .2s ease;
+}
+  /*^^^--------------Hover Styling for Shadow Image Above--------------^^^*/
+
+  /*VVV--------------Hover Grow/Shrink Styling Below--------------VVV*/
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+    /*^^^--------------Hover Grow/Shrink Above--------------^^^*/

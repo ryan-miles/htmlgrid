@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <meta
+  name="viewport" content="width=device-width, initial-scale=1"
+  />
+  
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  
+  <link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  />
+  
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+  />
+
+  <link
+  rel="stylesheet"
+  href="5GNG.css"
+  />
+
+  </head>
+
+  <body>
+<!-- TopNavHTML Below-->
+    <div class="topnav" id="myTopnav">
+      <a href="#home">CTS Catalog Home</a>
+      <a href="#home" >Collab Hubs Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Hub Sites
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">5G</a>
+          <a href="#">Cloud</a>
+          <a href="#">DevSecOps</a>
+          <a href="#">Data Science</a>
+          <a href="#">Emulation</a>
+          <a href="#">Program Mgmt</a>
+          <a href="#">Training</a>
+          <a href="#">Virtual Ops</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="active" class="dropbtn">
+          AI/ML
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Proj 1</a>
+          <a href="#">Proj 2</a>
+          <a href="#">Proj 3</a>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+<!-- TopNavHTML Above-->
+<br>
+<!-- Grid Layout Below-->
+    <div class="grid">
+
+        <div class ="banner">
+        <img src="/SiteAssets/Graphics/banner-5g.png" alt="5G Banner" width="240px" height="auto">
+        </div>
+
+        <div class ="tiles">
+        <p class="shadow">
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/tile-innovations.png" alt="Innovations" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/tile-challenges.png" alt="Challenges" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/tile-expert.png" alt="Expert?" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/tile-help.png" alt="Help?" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/tile-tutorials.png" alt="Tutorials" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        </p>
+        </div>
+
+        <div class ="library">
+        <p style="text-align:center; box-shadow: 2px 2px rgba(85, 85, 85, 0.199); font-size: 1.4em; width: 1000px;">
+        5G Asset Library
+        </p>
+        </div>
+
+        <div class ="folders">
+        <p class="shadow">
+        <span><a href="www.google.com"><img src="/SiteAssets/Graphics/folder-contopp.png" alt="Contract Opportunities" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a></span>
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/folder-expart.png" alt="External Partners" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/folder-rtxcol.png" alt="RTX Collabs" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/folder-tools.png" alt="Tools & Processes" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        <a href="www.google.com"><img src="/SiteAssets/Graphics/folder-irad.png" alt="IRAD" width="150px" height="auto" style="padding-left:10px; padding-right:10px"></a>  
+        </p>
+        </div>
+<!-- Grid Layout Above-->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+</body>
