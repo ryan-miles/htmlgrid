@@ -228,4 +228,21 @@ transition: .2s ease;
   transition: transform 300ms;
 }
 /*^^^--------------Hover Styling 2 Above--------------^^^*/
+
+.info {
+  width: 960px;
+  height: 14px;
+  display:flex;/*CSS3*/
+  align-items:center;/*Vertical align*/
+  justify-content:center;/*horizontal align*/
+  font-size: 12px;
+  font-family: arial;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
+  padding: 2px;
+  background-color: #e7f3fe;
+  border-left: 8px solid #2196F3;
+  }
+
 @media only screen and (min-width: 700px){}
